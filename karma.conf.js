@@ -48,6 +48,10 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
+    customLauchers: {
+      base: 'ChromeCI',
+      flags:['--no-sandbox']
+    },
     singleRun: false,
     restartOnFileChange: true
   });
