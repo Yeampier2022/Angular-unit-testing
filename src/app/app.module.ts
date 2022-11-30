@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 
 
 
@@ -14,7 +14,8 @@ import { PersonComponent } from './components/person/person.component';
 import { PeopleComponent } from './components/people/people.component';
 import { ProductComponent } from './components/product/product.component';
 import { OthersComponent } from './components/others/others.component';
-import { HighlightDirective } from './directives/highlight.directive';
+import { HighligthDirective } from './directives/highlight.directive';
+import { ReservePipe } from './pipes/reserve.pipe';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,15 @@ import { HighlightDirective } from './directives/highlight.directive';
     PeopleComponent,
     ProductComponent,
     OthersComponent,
-    HighlightDirective
+    HighligthDirective,
+    ReservePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     {
