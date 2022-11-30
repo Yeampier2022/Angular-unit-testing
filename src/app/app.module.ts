@@ -13,6 +13,8 @@ import { TokenInterceptor } from './interceptors/token.interceptors';
 import { PersonComponent } from './components/person/person.component';
 import { PeopleComponent } from './components/people/people.component';
 import { ProductComponent } from './components/product/product.component';
+import { OthersComponent } from './components/others/others.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ProductComponent } from './components/product/product.component';
     PicoPreviewComponent,
     PersonComponent,
     PeopleComponent,
-    ProductComponent
+    ProductComponent,
+    OthersComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
